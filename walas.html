@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMPN 1 Tirtajaya - Sistem Absensi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <img src="assets/images/logo.png" alt="Logo SMPN 1 Tirtajaya" style="width: 40px; height: 40px; object-fit: contain;">
+                    </div>
+                    <div class="logo-text">
+                        <span class="title">SMPN 1 Tirtajaya</span>
+                        <span class="subtitle">Sistem Absensi</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="user-profile">
+                <div class="avatar">SR</div>
+                <div class="user-info">
+                    <span class="name">Bu Siti Rahmawati</span>
+                    <span class="nip">NIP. 19840212...</span>
+                </div>
+            </div>
+
+            <div class="menu-label">MENU UTAMA</div>
+            <nav class="sidebar-nav">
+                <a href="#beranda" class="nav-item active" data-target="beranda">
+                    <i class="fas fa-home"></i> Beranda Kelas Walas
+                </a>
+                <a href="#data-siswa" class="nav-item" data-target="data-siswa">
+                    <i class="fas fa-chart-bar"></i> Data Siswa
+                </a>
+                <a href="#monitoring" class="nav-item" data-target="monitoring">
+                    <i class="fas fa-user-check"></i> Monitoring Absen
+                </a>
+                <a href="#rekapan" class="nav-item" data-target="rekapan">
+                    <i class="fas fa-file-alt"></i> Rekapan Absen
+                </a>
+                <a href="#laporan" class="nav-item" data-target="laporan">
+                    <i class="fas fa-file-signature"></i> Laporan Kelas
+                </a>
+                <a href="#validasi" class="nav-item" data-target="validasi">
+                    <i class="fas fa-check-circle"></i> Validasi dan Koreksi Absen
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="btn-logout">
+                    Logout <i class="fas fa-sign-out-alt"></i>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <h1 class="page-title" id="page-title">Beranda Kelas Walas</h1>
+                <div class="topbar-actions">
+                    <div class="academic-year">Tahun Ajaran 2026/2027</div>
+                    <button class="btn-notification"><i class="fas fa-bell"></i></button>
+                </div>
+            </header>
+
+            <div class="content-area" id="content-area">
+                <!-- Content injected via JS -->
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMPN 1 Tirtajaya - Sistem Absensi (Super Admin)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <img src="assets/images/logo.png" alt="Logo SMPN 1 Tirtajaya"
+                            style="width: 40px; height: 40px; object-fit: contain;">
+                    </div>
+                    <div class="logo-text">
+                        <span class="title">SMPN 1 Tirtajaya</span>
+                        <span class="subtitle">Sistem Absensi</span>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav" style="margin-top: 20px;">
+                <a href="#dashboard" class="nav-item active" data-target="dashboard">
+                    <i class="fas fa-th-large"></i> Dashboard
+                </a>
+                <a href="#" class="nav-item" data-target="manajemen-guru">
+                    <i class="fas fa-chalkboard-teacher"></i> Manajemen Guru
+                </a>
+                <a href="#" class="nav-item" data-target="manajemen-siswa">
+                    <i class="fas fa-user-graduate"></i> Manajemen Siswa
+                </a>
+                <a href="#" class="nav-item" data-target="manajemen-kelas">
+                    <i class="fas fa-chalkboard"></i> Manajemen Kelas
+                </a>
+                <a href="#" class="nav-item" data-target="manajemen-mapel">
+                    <i class="fas fa-book"></i> Manajemen Mapel
+                </a>
+                <a href="#" class="nav-item" data-target="tahun-ajaran">
+                    <i class="far fa-calendar-alt"></i> Tahun Ajaran
+                </a>
+                <a href="#" class="nav-item" data-target="jadwal-kelas">
+                    <i class="far fa-clock"></i> Jadwal Kelas
+                </a>
+                <a href="#" class="nav-item" data-target="manajemen-absensi">
+                    <i class="fas fa-clipboard-check"></i> Manajemen Absensi
+                </a>
+                <a href="#" class="nav-item" data-target="laporan">
+                    <i class="fas fa-file-alt"></i> Laporan
+                </a>
+                <a href="#" class="nav-item" data-target="rekap-absensi">
+                    <i class="fas fa-chart-bar"></i> Rekap Absensi
+                </a>
+                <a href="#" class="nav-item" data-target="riwayat-absensi">
+                    <i class="fas fa-history"></i> Riwayat Absensi
+                </a>
+                <a href="#" class="nav-item" data-target="audit-log">
+                    <i class="fas fa-pencil-alt"></i> Audit Log
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="btn-logout">
+                    Logout <i class="fas fa-sign-out-alt"></i>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <h1 class="page-title" id="page-title">Dashboard</h1>
+                <div class="topbar-actions">
+                    <div style="position: relative;">
+                        <input type="text" placeholder="Cari..."
+                            style="padding: 8px 16px 8px 36px; border: none; border-radius: 20px; background: #f3f4f6; font-size: 13px; outline: none; width: 250px;">
+                        <i class="fas fa-search"
+                            style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #9ca3af; font-size: 13px;"></i>
+                    </div>
+                    <div class="user-profile"
+                        style="margin-left: 15px; border-top: none; padding: 0; background: transparent; cursor: pointer;">
+                        <div class="avatar" style="width: 35px; height: 35px; font-size: 14px;">AU</div>
+                        <div class="user-info" style="display: flex; flex-direction: column;">
+                            <span class="name"
+                                style="font-weight: 700; color: var(--primary-dark); font-size: 13px;">Admin
+                                Utama</span>
+                            <span class="nip" style="color: #6b7280; font-size: 11px;">Super Admin</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-area" id="content-area">
+                <!-- Content injected via JS -->
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="js/appSuperadmin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+@import 'base/variables.css';
+@import 'layout/layout.css';
+@import 'components/ui.css';
+@import 'components/tables.css';
+@import 'components/forms.css';
+@import 'components/pages.css';
+
+/* Utility classes for layout */
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.gap-3 {
+    gap: 15px;
+}
+
+.mb-4 {
+    margin-bottom: 20px;
+}
+
+.mt-4 {
+    margin-top: 20px;
+}
+
+/* Specific Page Styles */
+.welcome-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-info h2 {
+    color: var(--primary-blue);
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.welcome-info p {
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.welcome-info p strong {
+    color: var(--text-main);
+}
+
+.section-header {
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 4px;
+}
+
+.section-subtitle {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.class-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.class-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius-lg);
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.class-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+.class-card-title h3 {
+    font-size: 18px;
+    color: var(--primary-blue);
+    margin-bottom: 4px;
+}
+
+.class-card-title p {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.class-card-time {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-main);
+    margin-bottom: 20px;
+}
+
+.class-card-time i {
+    color: var(--text-muted);
+}
+
+.page-header {
+    margin-bottom: 25px;
+}
+
+.page-header .badge {
+    margin-bottom: 10px;
+    display: inline-block;
+    background-color: var(--bg-color);
+    color: var(--primary-blue);
+    border: 1px solid var(--accent-yellow);
+    font-size: 10px;
+}
+
+.page-header h2 {
+    font-size: 22px;
+    color: var(--primary-blue);
+    margin-bottom: 5px;
+}
+
+.page-header p {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.page-header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Report Table Specific */
+.report-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.report-filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 15px;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.text-success { color: var(--success-text); }
+.text-danger { color: var(--danger-btn); }
+.text-warning { color: var(--warning-text); }
+.font-bold { font-weight: 700; }
